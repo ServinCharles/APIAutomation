@@ -1,0 +1,21 @@
+{
+    "name": "apiAutomation",
+    "version": "0.0.0",
+    "description": "Simple API Automation",
+    "author": "Servin Charles",
+    "scripts": {
+      "regression": "qa-suite --tags \"@NeedsAndCircsRegression\" --url http://localhost:3000/ --output report/cucumberOutput.json --atids ./config/atids",
+      "regression-report": "qa-generate-report --input report/cucumberOutput.json --output report/cucumber_report.html"
+    },
+    "devDependencies": {
+
+    },
+    "dependencies": {
+        "cucumber": "^5.0.2",
+        "cucumber-html-reporter": "^4.0.2",
+        "selenium-webdriver": "^4.0.0-alpha.1",
+        "chai": "^4.2.0",
+        "chai-http":"^4.2.0"
+    }
+  }
+  
